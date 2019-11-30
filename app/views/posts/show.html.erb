@@ -1,0 +1,7 @@
+
+<h3>Title: <%= @post.title %></h3>
+<h3>Body: <%= @post.body %></h3>
+<p>Author: <%= @post.author %></p>
+<%= link_to 'delete', post_path(@post), method: :delete %>
+<%= link_to 'edit', edit_post_path(@post) %>
+<%= link_to 'back', posts_path %> 

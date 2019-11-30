@@ -1,0 +1,21 @@
+<h1> new post</h1>
+
+<%# form_with(model: @course, local: true) do |f| %> 
+<%= form_for @post do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+ 
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+ 
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.submit %>
+<% end %>
+
+<img 
+  class="ui centered big circular image"
+  src='https://images.unsplash.com/photo-1553044707-b710ee53ffbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60' 
+/> 
